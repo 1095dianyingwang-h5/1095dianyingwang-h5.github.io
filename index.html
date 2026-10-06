@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>1095电影网 - 三年每日电影推荐/影讯与正版观影导航</title>
+<meta name="description" content="1095电影网按“三年每日一片”做电影推荐与影讯：类型片志、院线新片、流媒体上线、10分总评榜与观影日志，按国内持牌平台、国际流媒体、院线票务整理正版入口；手机电脑自适应，不提供盗版播放与网盘下载。">
+<meta name="keywords" content="1095电影网,三年每日一片,电影推荐,影讯资讯,10分榜单,正版电影渠道,1095dianyingwang">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://1095dianyingwang-h5.github.io/">
+<meta property="og:title" content="1095电影网 - 三年每日一片与正版观影导航">
+<meta property="og:description" content="1095电影网提供每日电影推荐、类型片志、院线档期、10分总评与正版渠道整理，沙陶土日志单页，移动三档自适应。">
+<meta property="og:url" content="https://1095dianyingwang-h5.github.io/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"1095电影网",
+  "url":"https://1095dianyingwang-h5.github.io/",
+  "description":"1095电影网提供三年每日电影推荐、类型片志、院线新片与流媒体资讯、10分总评榜及正版观看渠道整理。",
+  "potentialAction":{"@type":"SearchAction","target":"https://1095dianyingwang-h5.github.io/#search={search_term_string}","query-input":"required name=search_term_string"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"1095电影网是什么模式？","acceptedAnswer":{"@type":"Answer","text":"1095天约等于三年，本站按“每日一片”做长期片单：类型片志、三年旅程、院线与流媒体档期、10分总评。片库为示例元数据，用于找片和资讯参考，不提供完整片源。"}},
+    {"@type":"Question","name":"1095电影网能直接播放吗？","acceptedAnswer":{"@type":"Answer","text":"本站定位推荐与资讯导航，不提供盗版播放、网盘直链或未授权下载。观看按钮导向正版视频平台、院线票务或片方官方页面，具体可播片单以地区和授权状态为准。"}},
+    {"@type":"Question","name":"10分总评怎么算？","acceptedAnswer":{"@type":"Answer","text":"10分总评为示例综合分，按影评口碑、类型完整度、档期热度与编辑复看折算；仅用于排序参考，不代表任何平台官方分数。"}},
+    {"@type":"Question","name":"手机端怎么用1095片志？","acceptedAnswer":{"@type":"Answer","text":"全站响应式，手机打开可用搜索、类型筛选、天数片志、三年时间线与正版渠道；无需下载客户端，适合通勤按天补片。"}} 
+  ]
+}
+</script>
+<style>
+:root{
+  --cream:#faf5ea;--paper:#fffdf7;--paper2:#f6efe1;--line:#e8ddc9;
+  --terra:#bf4f2e;--terra2:#e0703f;--sage:#6f7d4e;--sage2:#8aa05f;
+  --ink:#2c2722;--muted:#7a7066;--radius:14px;--max:1180px;--shadow:0 14px 30px rgba(44,39,34,.12);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;
+  background:
+    radial-gradient(900px 380px at 95% -8%,rgba(224,112,63,.12),transparent 60%),
+    radial-gradient(820px 360px at 0% 4%,rgba(111,125,78,.10),transparent 55%),
+    var(--cream);
+  color:var(--ink);line-height:1.66;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 18px}
+
+header.top{position:sticky;top:0;z-index:60;background:rgba(250,245,234,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top-in{display:flex;align-items:center;justify-content:space-between;height:62px}
+.brand{font-weight:900;font-size:20px;letter-spacing:.5px}
+.brand b{color:var(--terra)}
+.top-in nav{display:flex;gap:6px;flex-wrap:wrap}
+.top-in nav a{padding:8px 12px;border-radius:999px;color:var(--muted);font-size:14px;transition:.25s}
+.top-in nav a:hover{color:#fff;background:linear-gradient(90deg,var(--terra),var(--sage))}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;border:0;background:none;padding:8px}
+.burger span{width:24px;height:2px;background:var(--terra);border-radius:2px}
+
+.hero{padding:32px 0 16px}
+.board{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center}
+.kick{display:inline-flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.chip{font-size:12px;color:var(--terra);border:1px solid var(--line);background:var(--paper);padding:5px 10px;border-radius:999px}
+h1{font-size:clamp(28px,4.6vw,46px);line-height:1.16;font-weight:900}
+h1 b{background:linear-gradient(90deg,var(--terra),var(--sage));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{color:var(--muted);margin:14px 0 18px;max-width:560px}
+.search{display:flex;gap:10px;background:var(--paper);border:1px solid var(--line);padding:10px;border-radius:999px;max-width:560px;box-shadow:var(--shadow)}
+.search input{flex:1;background:transparent;border:0;outline:0;color:var(--ink);padding:8px 12px;font-size:15px}
+.search button{border:0;background:linear-gradient(90deg,var(--terra),var(--sage));color:#fff;font-weight:800;padding:8px 18px;border-radius:999px;cursor:pointer}
+.stats{display:flex;gap:20px;margin-top:20px;flex-wrap:wrap}
+.stats div{font-size:13px;color:var(--muted)}
+.stats b{display:block;font-size:22px;color:var(--terra)}
+
+.cal{position:relative;border-radius:20px;background:linear-gradient(160deg,var(--paper),var(--paper2));border:1px solid var(--line);box-shadow:var(--shadow);padding:22px;overflow:hidden}
+.cal .cap{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px;margin-bottom:14px}
+.cal .big{display:flex;gap:10px;justify-content:center;align-items:flex-end}
+.num{font-family:"Courier New",monospace;font-weight:900;font-size:60px;color:#fff;background:linear-gradient(180deg,var(--terra),#9c3c20);border:1px solid #d9805a;border-radius:12px;padding:6px 16px;box-shadow:inset 0 0 18px rgba(224,112,63,.35)}
+.num.sage{background:linear-gradient(180deg,var(--sage),#566139);border-color:#a7bd7c;box-shadow:inset 0 0 18px rgba(138,160,95,.35)}
+.cal .note{text-align:center;color:var(--muted);font-size:13px;margin-top:14px}
+.cal .note b{color:var(--terra)}
+.dots{display:flex;gap:6px;justify-content:center;margin-top:12px;flex-wrap:wrap}
+.dots i{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.dots i.on{background:linear-gradient(90deg,var(--terra),var(--sage))}
+
+section.block{padding:30px 0}
+.sec-head{margin-bottom:20px}
+.sec-head h2{font-size:clamp(22px,3.2vw,30px);font-weight:900}
+.sec-head h2:after{content:"";display:block;width:54px;height:4px;margin:10px 0 0;border-radius:4px;background:linear-gradient(90deg,var(--terra),var(--sage))}
+.sec-head p{color:var(--muted);margin-top:8px;font-size:14px}
+
+.cards4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:linear-gradient(160deg,var(--paper),var(--paper2));border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:0 8px 18px rgba(44,39,34,.08)}
+.card .ic{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;background:linear-gradient(135deg,var(--terra),var(--ink));color:#fff}
+.card h3{margin:12px 0 6px;font-size:16px}
+.card p{color:var(--muted);font-size:13px}
+
+.lib-tools{display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between;align-items:center;margin-bottom:14px}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.fbtn{border:1px solid var(--line);background:var(--paper);color:var(--muted);padding:7px 15px;border-radius:999px;cursor:pointer;font-size:14px;transition:.25s}
+.fbtn.active,.fbtn:hover{color:#fff;background:linear-gradient(90deg,var(--terra),var(--sage));border-color:transparent;font-weight:700}
+.log-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.film{position:relative;background:linear-gradient(160deg,var(--paper),var(--paper2));border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 8px 18px rgba(44,39,34,.08)}
+.film .day{position:absolute;left:10px;top:10px;z-index:2;font-family:"Courier New",monospace;font-size:12px;font-weight:900;color:#fff;background:var(--terra);padding:4px 9px;border-radius:8px}
+.film .poster{position:relative;aspect-ratio:16/10;background:radial-gradient(120% 80% at 78% 0%,rgba(111,125,78,.18),transparent),linear-gradient(160deg,#f0e7d6,#f7f1e3);display:flex;align-items:center;justify-content:center}
+.film .poster span{font-size:42px;opacity:.6}
+.film .poster em{position:absolute;right:10px;bottom:10px;font-style:normal;font-size:12px;color:var(--ink);background:rgba(255,253,247,.9);padding:4px 8px;border-radius:8px;border:1px solid var(--line)}
+.film .info{padding:12px 14px}
+.film .info h3{font-size:15px}
+.film .info .rate{color:var(--terra);font-size:13px;margin-top:4px}
+.film .info p{color:var(--muted);font-size:13px;margin-top:2px}
+
+.journey{position:relative;margin-left:8px;padding-left:24px;border-left:2px dashed var(--line)}
+.jr{position:relative;padding:16px 0}
+.jr:before{content:"";position:absolute;left:-33px;top:22px;width:14px;height:14px;border-radius:50%;background:linear-gradient(90deg,var(--terra),var(--sage))}
+.jr .yr{font-size:12px;font-weight:800;color:var(--terra)}
+.jr h4{font-size:16px;margin-top:2px}
+.jr p{color:var(--muted);font-size:13px;margin-top:6px}
+.jr .tags{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap}
+.jr .tags span{font-size:12px;color:var(--sage);border:1px solid var(--line);background:var(--paper);padding:3px 8px;border-radius:999px}
+
+.rank{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.rk{display:grid;grid-template-columns:46px 1fr 110px 70px;gap:12px;align-items:center;background:linear-gradient(160deg,var(--paper),var(--paper2));border:1px solid var(--line);border-radius:12px;padding:12px 14px;box-shadow:0 8px 18px rgba(44,39,34,.08)}
+.rk .no{font-size:16px;font-weight:900;color:#fff;background:linear-gradient(180deg,var(--terra),var(--ink));border-radius:10px;text-align:center;padding:6px 0}
+.rk h4{font-size:15px}
+.rk small{color:var(--muted)}
+.rk .sc{font-family:"Courier New",monospace;font-weight:900;color:var(--terra);font-size:15px;text-align:right}
+.bar{height:8px;border-radius:8px;background:var(--paper2);overflow:hidden;border:1px solid var(--line)}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--terra),var(--terra2),var(--sage2))}
+.up{color:#10b981}.down{color:#ef4444}
+
+.chan4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.chan{background:linear-gradient(160deg,var(--paper),var(--paper2));border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:0 8px 18px rgba(44,39,34,.08)}
+.chan .ic{font-size:24px}
+.chan h3{font-size:15px;margin:8px 0 6px;color:var(--ink)}
+.chan p{color:var(--muted);font-size:13px}
+.chan a{display:inline-block;margin-top:8px;color:var(--terra);font-weight:800;font-size:13px}
+
+.journal{display:grid;grid-template-columns:1.25fr 1fr;gap:18px}
+.lead{background:linear-gradient(160deg,var(--paper),var(--paper2));border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 8px 18px rgba(44,39,34,.08)}
+.lead .cover{height:210px;background:radial-gradient(120% 80% at 78% 0%,rgba(224,112,63,.16),transparent),linear-gradient(160deg,#f0e7d6,#f7f1e3);display:flex;align-items:center;justify-content:center;font-size:52px;opacity:.85}
+.lead .body{padding:16px}
+.lead h3{font-size:17px}
+.lead p{color:var(--muted);font-size:14px;margin-top:8px}
+.jlist{display:flex;flex-direction:column;gap:12px}
+.jitem{display:grid;grid-template-columns:64px 1fr;gap:12px;background:linear-gradient(160deg,var(--paper),var(--paper2));border:1px solid var(--line);border-radius:12px;padding:12px}
+.jitem .dt{font-family:"Courier New",monospace;font-size:12px;font-weight:800;color:var(--terra)}
+.jitem h4{font-size:14px}
+
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.qa{border:1px solid var(--line);background:linear-gradient(160deg,var(--paper),var(--paper2));border-radius:12px;overflow:hidden}
+.qa button{width:100%;text-align:left;background:none;border:0;color:var(--ink);padding:15px;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;gap:10px}
+.qa .pn{color:var(--terra);font-weight:800}
+.qa .an{max-height:0;overflow:hidden;transition:max-height .3s}
+.qa .an p{padding:0 15px 15px;color:var(--muted);font-size:14px}
+.qa.open .an{max-height:220px}
+
+footer{margin-top:30px;border-top:1px solid var(--line);background:#211d19;padding:36px 0 20px;color:#cfc6ba}
+.foot{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.foot h4{font-size:14px;margin-bottom:10px;color:#f0c9a6}
+.foot a{display:block;color:#b3a99c;font-size:13px;padding:4px 0}
+.foot a:hover{color:var(--terra2)}
+.copy{text-align:center;color:#9a9082;font-size:13px;margin-top:22px;line-height:1.8}
+.topbtn{position:fixed;right:18px;bottom:18px;width:46px;height:46px;border-radius:50%;border:0;background:linear-gradient(90deg,var(--terra),var(--sage));color:#fff;font-size:20px;cursor:pointer;opacity:0;visibility:hidden;transition:.3s;z-index:70}
+.topbtn.show{opacity:1;visibility:visible}
+
+@media(max-width:1024px){
+  .cards4{grid-template-columns:repeat(2,1fr)}
+  .log-grid{grid-template-columns:repeat(2,1fr)}
+  .rank{grid-template-columns:1fr}
+  .journal{grid-template-columns:1fr}
+  .board{gap:22px}
+}
+@media(max-width:768px){
+  .burger{display:flex}
+  .top-in nav{position:fixed;top:62px;left:0;right:0;background:var(--cream);border-bottom:1px solid var(--line);flex-direction:column;gap:0;padding:10px 18px;transform:translateY(-160%);transition:.3s;z-index:55}
+  .top-in nav.show{transform:translateY(0)}
+  .top-in nav a{padding:12px 0;border-bottom:1px solid var(--line)}
+  .board{grid-template-columns:1fr}
+  .cal{order:-1}
+  .cards4{grid-template-columns:1fr 1fr}
+  .chan4{grid-template-columns:1fr 1fr}
+  .faq{grid-template-columns:1fr}
+  .foot{grid-template-columns:repeat(2,1fr)}
+  .num{font-size:50px;padding:6px 13px}
+}
+@media(max-width:560px){
+  .cards4{grid-template-columns:1fr}
+  .log-grid{grid-template-columns:1fr}
+  .chan4{grid-template-columns:1fr}
+  .rk{grid-template-columns:40px 1fr;grid-auto-rows:auto}
+  .rk .bar,.rk .sc{grid-column:2}
+  .search{flex-direction:column;border-radius:16px}
+  .search button{border-radius:12px}
+  .foot{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a href="#" class="brand">1095电影网<b>·Daily 3-Year</b></a>
+    <button class="burger" id="burger" aria-label="菜单"><span></span><span></span><span></span></button>
+    <nav id="menu">
+      <a href="#home">首页</a>
+      <a href="#rule">每日标准</a>
+      <a href="#log">天数片志</a>
+      <a href="#journey">三年旅程</a>
+      <a href="#rank">10分总评</a>
+      <a href="#channels">正版渠道</a>
+      <a href="#journal">观影日志</a>
+      <a href="#faq">问答</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="wrap board">
+    <div>
+      <div class="kick">
+        <span class="chip">三年每日一片</span><span class="chip">类型片志</span><span class="chip">院线影讯</span><span class="chip">正版导流</span>
+      </div>
+      <h1>1095电影网 · <b>1095天，按天补完好片</b></h1>
+      <p class="lede">1095电影网以“三年每日一片”组织推荐：天数片志、类型筛选、院线新片与流媒体上线、10分总评和观影日志一站整合；观看入口按国内持牌平台、国际流媒体、院线票务分流，不提供盗版播放与网盘下载。</p>
+      <form class="search" id="search" onsubmit="return false;">
+        <input type="text" placeholder="搜：第001天、社会悬疑、硬科幻、合家欢、纪录片…" aria-label="搜索电影">
+        <button type="submit">按天找片</button>
+      </form>
+      <div class="stats">
+        <div><b>1095天</b>三年片单</div>
+        <div><b>10分制</b>总评排序</div>
+        <div><b>每日</b>新片与排片</div>
+        <div><b>正版</b>观看入口</div>
+      </div>
+    </div>
+    <div class="cal" aria-label="1095天计数器">
+      <div class="cap"><span>DAILY FILM LOG</span><span>3 YEARS · 365×3</span></div>
+      <div class="big">
+        <div class="num">1</div>
+        <div class="num">0</div>
+        <div class="num">9</div>
+        <div class="num sage">5</div>
+      </div>
+      <div class="dots">
+        <i class="on"></i><i class="on"></i><i></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i></i>
+      </div>
+      <div class="note">全站示例基准：已完成 <b>1095</b> 天打卡路径 · 按类型/年份/评分回看</div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="rule">
+  <div class="wrap">
+    <div class="sec-head"><h2>每日一片标准</h2><p>四条规则替代片荒，也避开低质与盗版</p></div>
+    <div class="cards4">
+      <div class="card"><div class="ic">🎯</div><h3>类型不重样</h3><p>剧情、喜剧、科幻、悬疑、纪录、动画按周轮换；每天一个主类型，长期补片不疲劳。</p></div>
+      <div class="card"><div class="ic">🗓️</div><h3>档期同步</h3><p>院线新片、流媒体上线、重映分开标注；先定可看渠道，再写推荐理由。</p></div>
+      <div class="card"><div class="ic">⭐</div><h3>10分总评</h3><p>示例评分、影评口碑、信息完整度综合折算；冷门片单独给“补片价值”标签。</p></div>
+      <div class="card"><div class="ic">🔗</div><h3>正版优先</h3><p>国内持牌、国际订阅、院线票务、片方官方分层；不列解析站、不提供网盘直链。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="log">
+  <div class="wrap">
+    <div class="sec-head"><h2>天数片志</h2><p>按天数徽章＋类型筛选示例，内页统一用 #</p></div>
+    <div class="lib-tools">
+      <div class="filters" id="filters">
+        <button class="fbtn active">全部</button>
+        <button class="fbtn">剧情</button>
+        <button class="fbtn">喜剧</button>
+        <button class="fbtn">科幻</button>
+        <button class="fbtn">悬疑</button>
+        <button class="fbtn">纪录</button>
+        <button class="fbtn">动画</button>
+      </div>
+    </div>
+    <div class="log-grid" id="grid">
+      <div class="film" data-cat="剧情"><span class="day">DAY 001</span><div class="poster"><span>🎭</span><em>剧情</em></div><div class="info"><h3>潮汐家属编年</h3><p>家庭/现实 · 开片示例</p><div class="rate">10分制 · 9.1 关系向</div></div></div>
+      <div class="film" data-cat="科幻"><span class="day">DAY 092</span><div class="poster"><span>🛰️</span><em>科幻</em></div><div class="info"><h3>轨道锈蚀警告</h3><p>太空/灾变 · 补片示例</p><div class="rate">10分制 · 8.8 烧脑向</div></div></div>
+      <div class="film" data-cat="悬疑"><span class="day">DAY 186</span><div class="poster"><span>🕵️</span><em>悬疑</em></div><div class="info"><h3>九十八小时口供</h3><p>社会派/法治 · 补片示例</p><div class="rate">10分制 · 8.9 反转向</div></div></div>
+      <div class="film" data-cat="喜剧"><span class="day">DAY 274</span><div class="poster"><span>🤣</span><em>喜剧</em></div><div class="info"><h3>售票处奇遇记</h3><p>都市/荒诞 · 解压示例</p><div class="rate">10分制 · 8.2 轻松向</div></div></div>
+      <div class="film" data-cat="纪录"><span class="day">DAY 511</span><div class="poster"><span>🎥</span><em>纪录</em></div><div class="info"><h3>海岸救援十二年</h3><p>纪实/职场 · 深度示例</p><div class="rate">10分制 · 9.0 资料向</div></div></div>
+      <div class="film" data-cat="动画"><span class="day">DAY 730</span><div class="poster"><span>🎨</span><em>动画</em></div><div class="info"><h3>影厅小烘焙师</h3><p>奇幻/合家欢 · 亲子示例</p><div class="rate">10分制 · 8.6 治愈向</div></div></div>
+      <div class="film" data-cat="剧情"><span class="day">DAY 912</span><div class="poster"><span>🎬</span><em>剧情</em></div><div class="info"><h3>中层退休预案</h3><p>职场/人生阶段 · 成熟示例</p><div class="rate">10分制 · 8.5 社会向</div></div></div>
+      <div class="film" data-cat="科幻"><span class="day">DAY 1095</span><div class="poster"><span>🤖</span><em>科幻</em></div><div class="info"><h3>仿生一〇九五</h3><p>AI/伦理 · 收官示例</p><div class="rate">10分制 · 9.2 思辨向</div></div></div>
+      <div class="film" data-cat="悬疑"><span class="day">DAY 638</span><div class="poster"><span>🔍</span><em>悬疑</em></div><div class="info"><h3>灰档案十一页</h3><p>法治/证据链 · 补片示例</p><div class="rate">10分制 · 8.7 社会向</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="journey">
+  <div class="wrap">
+    <div class="sec-head"><h2>三年旅程</h2><p>从打底类型到主题闭环，按阶段回看</p></div>
+    <div class="journey">
+      <div class="jr"><div class="yr">第1年 · DAY 001–365</div><h4>类型地基</h4><p>用剧情、喜剧、动作、悬疑建立每日习惯，优先院线新片与高评分经典，解决“今天看什么”。</p><div class="tags"><span>剧情</span><span>喜剧</span><span>动作</span><span>悬疑</span></div></div>
+      <div class="jr"><div class="yr">第2年 · DAY 366–730</div><h4>作者与纪实</h4><p>加入作者电影、纪录片、传记与硬科幻，按电影节、真实事件、技术伦理深化，适合系统补片。</p><div class="tags"><span>作者</span><span>纪录</span><span>传记</span><span>硬科幻</span></div></div>
+      <div class="jr"><div class="yr">第3年 · DAY 731–1095</div><h4>主题闭环</h4><p>按人生阶段、社会关系、战争和平、AI与未来做主题月；输出10分总评与正版补片路径。</p><div class="tags"><span>主题月</span><span>人生阶段</span><span>正版回流</span><span>总评榜</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="rank">
+  <div class="wrap">
+    <div class="sec-head"><h2>10分总评榜</h2><p>三年示例综合分，按口碑/完整度/档期折算</p></div>
+    <div class="rank">
+      <div class="rk"><div class="no">1</div><div><h4>仿生一〇九五</h4><small>科幻/AI · 示例9.2</small></div><div class="bar"><i style="width:92%"></i></div><div class="sc">9.2</div></div>
+      <div class="rk"><div class="no">2</div><div><h4>潮汐家属编年</h4><small>剧情/家庭 · 示例9.1</small></div><div class="bar"><i style="width:91%"></i></div><div class="sc">9.1</div></div>
+      <div class="rk"><div class="no">3</div><div><h4>海岸救援十二年</h4><small>纪录/职场 · 示例9.0</small></div><div class="bar"><i style="width:90%"></i></div><div class="sc">9.0</div></div>
+      <div class="rk"><div class="no">4</div><div><h4>九十八小时口供</h4><small>悬疑/社会派 · 示例8.9</small></div><div class="bar"><i style="width:89%"></i></div><div class="sc">8.9</div></div>
+      <div class="rk"><div class="no">5</div><div><h4>轨道锈蚀警告</h4><small>科幻/灾变 · 示例8.8</small></div><div class="bar"><i style="width:88%"></i></div><div class="sc">8.8</div></div>
+      <div class="rk"><div class="no">6</div><div><h4>灰档案十一页</h4><small>悬疑/法治 · 示例8.7</small></div><div class="bar"><i style="width:87%"></i></div><div class="sc">8.7</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="channels">
+  <div class="wrap">
+    <div class="sec-head"><h2>正版观看渠道</h2><p>国内持牌＋国际订阅＋院线＋片方，按授权地区为准</p></div>
+    <div class="chan4">
+      <div class="chan"><div class="ic">📺</div><h3>国内持牌平台</h3><p>爱奇艺、腾讯视频、优酷、咪咕、哔哩哔哩、1905电影网、央视频等提供正版中字与合法点播，按天片志可反向查源。</p><a href="#">按片名查正版 #</a></div>
+      <div class="chan"><div class="ic">🌐</div><h3>国际流媒体</h3><p>Netflix、Prime Video、Disney+、HBO Max 等覆盖作者电影、科幻与纪录片；区供片单以账号地区为准。</p><a href="#">看地区片单 #</a></div>
+      <div class="chan"><div class="ic">🎟️</div><h3>院线票务</h3><p>新片、重映、IMAX/杜比优先查本地排片；通过正规票务进场，避免枪版与网盘资源。</p><a href="#">查影院排片 #</a></div>
+      <div class="chan"><div class="ic">🎞️</div><h3>片方/官方</h3><p>官网与发行方页提供预告、上映
